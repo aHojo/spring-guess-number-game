@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--  Enables us to use context:annotation-config -->
+<!--  All of the components in this will be scanned in the project-->
+  <context:component-scan base-package="learnprogramming" />
+
+<!--  EVERYTHING BELOW IS NOT NEEDED ANYMORE BECAUSE OF context:component-scan-->
+<!--  This was added so that we could use autowire-->
+<!--  <context:annotation-config>-->
+<!--  </context:annotation-config>-->
+
+<!--  <bean id="numberGenerator" class="NumberGeneratorImpl"></bean>-->
+<!--&lt;!&ndash;  Set up beans for our spring project&ndash;&gt;-->
+<!--&lt;!&ndash;  init-method is called when the bean is created&ndash;&gt;-->
+<!--&lt;!&ndash;  <bean id="game" class="GameImpl" init-method="reset">&ndash;&gt;-->
+<!--  <bean id="game" class="GameImpl" >-->
+<!--&lt;!&ndash;    Constructor dependency injection has to be the same as the id of the bean &ndash;&gt;-->
+<!--&lt;!&ndash;    <constructor-arg ref="numberGenerator" />&ndash;&gt;-->
+<!--&lt;!&ndash;    Setter based dependency injection&ndash;&gt;-->
+<!--&lt;!&ndash;    name on property is the propety in the class-->
+<!--        ref is the name of the bean above-->
+<!--&ndash;&gt;-->
+<!--&lt;!&ndash;    <property name="numberGenerator" ref="numberGenerator" />&ndash;&gt;-->
+<!--  </bean>-->
+
+<!--  Enables postconstruct and predestroy annotations when not using annotations @Component etc-->
+<!--  <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>-->
+</beans>

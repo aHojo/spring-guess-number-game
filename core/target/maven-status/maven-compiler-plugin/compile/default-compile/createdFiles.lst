@@ -1,0 +1,7 @@
+ninja\ahojo\Game.class
+ninja\ahojo\MessageGenerator.class
+ninja\ahojo\NumberGenerator.class
+ninja\ahojo\GameImpl.class
+ninja\ahojo\AppConfig.class
+ninja\ahojo\NumberGeneratorImpl.class
+ninja\ahojo\MessageGeneratorImpl.class
